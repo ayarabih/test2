@@ -26,7 +26,7 @@ Vagrant.configure("2") do |config|
 	        :ip => "#{NETWORK_PREFIX}0"
         master.vm.hostname = "master"
     end
-
+hhh
     (1..WORKER_COUNT).each do |i|
         config.vm.define "worker-#{i}" do |worker|
             worker.vm.box = IMAGE_NAME
